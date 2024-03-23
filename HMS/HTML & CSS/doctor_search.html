@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url("hospital9.jpg");
+        }
+
+        marquee {
+            width:80%;
+            direction: left;
+        }
+
+        h1 {
+            color: #4433ff;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        h2 {
+            text-align: center;
+          
+            font-family: 'Times New Roman', Times, serif;
+            font-size:x-large;
+            color: #09024e;
+        }
+
+        form {
+            width: 30%;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            font-family: 'Times New Roman', Times, serif;
+            font-size: larger;
+            color: #000000;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #5e4caf;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: larger;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        input[type="submit"]:hover {
+            background-color: rgb(123, 105, 0);
+        }
+    </style>
+    <script language="javascript">
+        function f1()
+        {
+           var nm=document.getElementById("nm").value
+           if(!isNaN(nm))
+           {
+             document.getElementById("nmresult").innerHTML="<font color=red>Name should not be neumeric</font>";
+             document.getElementById("nm").value="";
+             document.getElementById("nm").focus();
+           }
+           else
+            document.getElementById("nmresult").innerHTML=""
+        }
+        </script>
+</head>
+
+<body>
+    <marquee><h1>HOSPITAL MANAGEMENT SYSTEM</h1></marquee>
+
+    <h2>Serach Doctor</h2>
+
+    <form action="doctor_search1.jsp" method="post">
+       <b> Doctor's Name: <input type="text" name="nm" placeholder="Enter Doctor's Name" id=nm onchange="return f1()" required><br>
+        <center><div id="nmresult"></div></center><br>
+        <input type="submit" value="Click">
+    </form>
+</body>
+
+</html>

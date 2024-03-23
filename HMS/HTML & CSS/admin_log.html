@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-image: url("hospital8.png");
+            font-family: Arial, sans-serif;
+            font-size: x-large;
+        }
+
+        center {
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: rgb(149, 255, 0);
+        }
+
+        h3 {
+            font-style: italic;
+        }
+
+        table {
+            border: 2px solid darkblue;
+            width: 350px;
+            margin-top: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: larger;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: rgb(0, 55, 255);
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: larger;
+        }
+
+        button:hover {
+            background-color: darkred;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <marquee direction="left">
+            <h1>HOSPITAL MANAGEMENT SYSTEM</h1>
+        </marquee>
+        <br>
+        <h3><i>Enter your LogIn details....</i></h3>
+        <form action="admin_validate.jsp" method="post">
+            <table>
+                <tr>
+                    <td>Id:</td>
+                    <td><input type="text" required name="uid"></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" required name="pass"></td>
+                </tr>
+            </table>
+            <br><br>
+            <button type="submit"><b>LOGIN</b></button>
+        </form>
+    </center>
+</body>
+
+</html>

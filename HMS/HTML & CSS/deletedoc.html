@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <style>
+        body {
+            background-color: #b2ebf2;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+        } 
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            color: #ff7043;
+            margin-bottom: 20px;
+        }
+
+        .form-section {
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 2px solid #1976D2; 
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #2196F3; 
+            color: #fff;
+        }
+
+        label {
+            color: #1976D2; 
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            border: 2px solid #1976D2; 
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #1976D2; 
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1565C0; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>HOSPITAL MANAGEMENT SYSTEM</h1>
+        </header>
+        <section class="form-section">
+            <marquee width="70%" direction="left"><h2><i>Enter Doctor's ID...</i></h2></marquee>
+            <form action="deletedoc.jsp" method="post">
+                <table>
+                    <tr>
+                        <th>Enter Doctor's ID:</th>
+                        <td><input type="text" name="doctorsid"></td>
+                    </tr>
+                </table>
+                <input type="submit" value="DELETE">
+            </form>
+        </section>
+    </div>
+</body>
+</html>

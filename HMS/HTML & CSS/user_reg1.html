@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: linear-gradient(to right, #3498db, #6dd5fa);
+            
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url("hospital6.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            
+           
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.95); 
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
+        }
+
+        h2 {
+            color: #e74c3c; 
+            margin-top: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, td {
+            border: 2px solid #e74c3c; /* Light Red */
+        }
+
+        td {
+            padding: 15px;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: calc(100% - 20px); 
+            padding: 12px;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #ecf0f1; 
+        }
+
+        input[type="reset"], input[type="submit"] {
+            background-color: #e74c3c; 
+            color: #fff;
+            padding: 14px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="reset"]:hover, input[type="submit"]:hover {
+            background-color: #b4c02b; 
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="user_reg.jsp" method="post">
+       <center> <h2>Create Acccoun</h2> </center>
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="nm"></td>
+            </tr>
+            <tr>
+                <td>Mobile No:</td>
+                <td><input type="text" name="mob" required></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="text" name="email"></td>
+            </tr>
+            <tr>
+                <td>Create Password:</td>
+                <td><input type="password" name="pass" required></td>
+            </tr>
+        </table>
+        <br><br>
+        
+             <center> <input type="reset" value="RESET">
+                <input type="submit" value="SUBMIT">
+            
+        
+    </form>
+</body>
+</html>

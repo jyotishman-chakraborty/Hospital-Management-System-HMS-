@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: aqua;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        center {
+            margin-top: 50px;
+        }
+
+        marquee {
+            width: 70%;
+            direction: left;
+            color: red;
+        }
+
+        h1 {
+            margin-bottom: 0;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: auto;
+        }
+
+        table, th, td {
+            border: 2px solid darkblue;
+            padding: 10px;
+            text-align: left;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+
+        input[type=text] {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            background-color: darkblue;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #001F3F;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <marquee><h1><b>HOSPITAL MANAGEMENT SYSTEM</b></h1></marquee>
+
+        <h2><i>Please Enter Doctor's id......</i></h2>
+        <form action="updatedoctor1.jsp" method="post">
+            <table>
+                <tr>
+                    <td>Enter Doctor's ID:</td>
+                    <td><input type=text name="doctorsid"></td>
+                </tr>
+            </table><br>
+            <input type="submit" value="ENTER">
+        </form>
+    </center>
+</body>
+
+</html>
